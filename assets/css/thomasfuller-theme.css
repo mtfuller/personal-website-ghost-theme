@@ -8,12 +8,17 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #eee;
 }
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0.5rem;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
+}
+
+form {
+  width: 100%;
 }
 
 .footer {
@@ -142,4 +147,15 @@ Cover Page
 .greeting-text h3 {
   font-weight: 300;
   font-size: 50px;
+}
+
+
+/* =============================================================================
+Post Page
+============================================================================= */
+.img-post {
+  width: 100%;
+  object-fit: cover;
+  max-height: 400px;
+  margin-bottom: 25px;
 }
