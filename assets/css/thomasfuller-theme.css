@@ -61,6 +61,33 @@ code {
   border-radius: .1rem;
 }
 
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .display-1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+
 .footer p {
   color: #FFF;
   margin:0px;
@@ -87,7 +114,7 @@ p.lead {
   blockquote {
     font-size: 22px;
     margin: 25px;
-    padding: 20px 30px
+    padding: 20px 30px;
     border-left: 5px #bbb solid;
     color: #999;
   }
@@ -131,7 +158,6 @@ Cover Page
 .greeting {
   padding-top: 90px;
   min-height: 630px;
-  background-color: red;
 }
 
 .greeting-code {
@@ -140,6 +166,7 @@ Cover Page
   font-size: 30px;
   font-family: monospace;
   font-weight: lighter;
+  height: 400px;
 }
 
 #purple-underline {
@@ -153,19 +180,49 @@ Cover Page
 .greeting-text {
   padding: 20px 20px 20px 10px;
   font-family: 'Quicksand', sans-serif;
+  height: 400px;
 }
 
 .greeting-text h1 {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 300;
   color: #FFF;
 }
 
 .greeting-text h3 {
   font-weight: 300;
-  font-size: 50px;
+  font-size: 45px;
   color: #FFF;
 }
+
+.greeting-sm h3 {
+  font-weight: 300;
+  font-size: 45px;
+  margin: 0px;
+  color: #FFF;
+}
+
+.greeting-sm div {
+  padding-top: 65px;
+  color: #FFF;
+}
+
+.greeting-sm {
+  padding: 25px 15px 45px 15px;
+  color: #FFF;
+}
+
+
+/*.social-center div {
+  float:left;
+}
+
+
+
+.social-center i {
+  margin-right: 20px;
+  color: #FFF;
+}*/
 
 /* =============================================================================
 Post Page
@@ -216,7 +273,7 @@ Post Page
 
 .card-text:last-child {
     font-size: 16px;
-    height: 4.9em;
+    height: 4.8em;
     overflow: hidden;
 }
 
@@ -261,6 +318,34 @@ blockquote p {
   background-color: #d8a611;
 }
 
+.btn-red {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ce2a31;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  font-size: 18px;
+}
+
+.btn-red:hover {
+  color: #fff;
+  background-color: #b7262b;
+}
+
+.btn-blue {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4880C1;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  font-size: 18px;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: #4174ad;
+}
+
 .btn-yellow {
   color: #fff;
   cursor: pointer;
@@ -275,19 +360,20 @@ blockquote p {
   background-color: #c39610;
 }
 
-.btn-grey {
+.btn-green {
   color: #fff;
   cursor: pointer;
-  background-color: #999;
+  background-color: #28a745;
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
   font-size: 18px;
 }
 
-.btn-grey:hover {
+.btn-green:hover {
   color: #fff;
-  background-color: #777;
+  background-color: #218838;
 }
+
 
 .btn-purple {
   color: #fff;
@@ -301,6 +387,20 @@ blockquote p {
 .btn-purple:hover {
   color: #fff;
   background-color: #6b2973;
+}
+
+.btn-grey {
+  color: #fff;
+  cursor: pointer;
+  background-color: #999;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  font-size: 14px;
+}
+
+.btn-grey:hover {
+  color: #fff;
+  background-color: #777;
 }
 
 /* =============================================================================
@@ -382,11 +482,20 @@ Social Media Links
     color: #999;
 }
 
-.circle-shadow {
-    text-shadow: 0px 4px 8px #1A1A1A;
-}
-
 .fa-xs-footer {
     color: #424242;
     font-size: 25px;
+}
+
+.social-left a {
+  color: #CCC;
+  padding: 0px 15px;
+}
+
+.social-left a:first-child {
+  margin-left: 10px;
+}
+
+.social-left a:hover {
+  color: #999;
 }

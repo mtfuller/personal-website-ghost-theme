@@ -1,81 +1,95 @@
 {{!< default}}
 
-<div class="greeting bg-dark">
-  <div class="container">
+<div class="bg-dark">
+  <div class="container greeting d-none d-md-none d-lg-block">
     <div class="row">
       <div class="col-lg-6 greeting-text">
         <h1>
-          <span id="code-greeting">Hello</span>! I'm <span id="code-name">Thomas Fuller</span>
+          <span id="code-greeting">Hello</span>! I'm <br><span id="code-name">Thomas Fuller</span>
         </h1>
         <div id="purple-underline" style="display:none"></div>
         <h3>I am a young, <span id="code-ego">aspiring</span> <span id="code-job">software developer</span>.</h3>
-
-        <!--My name is Thomas Fuller. I am a young, aspiring software developer.-->
       </div>
       <div class="col-lg-6 greeting-code">
         <span id="begin-code"></span><span class="typed-cursor">|</span>
       </div>
     </div>
   </div>
+  <div class="container greeting-sm d-block d-lg-none">
+    <h3>Hello! I'm <br>Thomas Fuller.<br>I am a young, aspiring software developer.</h3>
+  </div>
 </div>
 <main role='main'>
   <div class="container">
     <div class="row section-lg">
-      <div class="col-lg-9">
-        <h1>If you would like to know more about me,</h1>
-        <p>please feel free to look at my About page. It gives a little glimpse about me and my interests.</p>
+      <div class="col-lg-3 text-center d-block d-lg-none">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/me.png"}}" width="182px" alt="Generic placeholder image">
       </div>
-      <div class="col-lg-3 text-center">
-        <img class="rounded-circle" src="http://www.clevermonkeylabs.org/wp-content/uploads/2016/05/work_00001.png" width="182px" alt="Generic placeholder image">
+      <div class="col-lg-9">
+        <h1>Want to know more about me?</h1>
+        <p>please feel free to look at my About page. It gives a little glimpse about me and my interests.</p>
+        <a href="/about"class="btn btn-red">About</a>
+      </div>
+      <div class="col-lg-3 text-center d-none d-md-none d-lg-block">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/me.png"}}" width="182px" alt="Generic placeholder image">
       </div>
     </div>
     <div class="row section-lg">
       <div class="col-lg-3 text-center">
-        <img class="rounded-circle" src="http://www.clevermonkeylabs.org/wp-content/uploads/2016/05/work_00001.png" width="182px" alt="Generic placeholder image">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/work.png"}}" width="182px" alt="Generic placeholder image">
       </div>
       <div class="col-lg-9">
         <h1>Curious about my work experience?</h1>
         <p>You can look at my skills and work experience. Also, I have a showcase of my best work and projects that I've collected throughout the years.</p>
+        <a href="/resume"class="btn btn-blue">Resume</a>
       </div>
     </div>
     <div class="row section-lg">
+      <div class="col-lg-3 text-center d-block d-lg-none">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/projects.png"}}" width="182px" alt="Generic placeholder image">
+      </div>
       <div class="col-lg-9">
         <h1>Care to check out some of my passion projects?</h1>
         <p>In my free time, I tend to tinker around with software, coding, electronics, RPi's, Arduino's, and other things. Would love for you to checkout some of the projects I'm working on.</p>
+        <a href="/tag/projects"class="btn btn-yellow">Projects</a>
       </div>
-      <div class="col-lg-3 text-center">
-        <img class="rounded-circle" src="http://www.clevermonkeylabs.org/wp-content/uploads/2016/05/work_00001.png" width="182px" alt="Generic placeholder image">
+      <div class="col-lg-3 text-center d-none d-md-none d-lg-block">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/projects.png"}}" width="182px" alt="Generic placeholder image">
       </div>
     </div>
     <div class="row section-lg">
       <div class="col-lg-3 text-center">
-        <img class="rounded-circle" src="http://www.clevermonkeylabs.org/wp-content/uploads/2016/05/work_00001.png" width="182px" alt="Generic placeholder image">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/blog.png"}}" width="182px" alt="Generic placeholder image">
       </div>
       <div class="col-lg-9">
-        <h1>Interested to know what I'm thinking about?</h1>
+        <h1>Interested in what I'm thinking about?</h1>
         <p>I try to write down thoughts that pop up in my head. Helps me to look back and reflect on where I'm at and look forward to where I'm going.</p>
+        <a href="/tag/blog"class="btn btn-green">Blog</a>
       </div>
     </div>
     <div class="row section-lg">
+      <div class="col-lg-3 text-center d-block d-lg-none">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/contact.png"}}" width="182px" alt="Generic placeholder image">
+      </div>
       <div class="col-lg-9">
         <h1>Would you like to get in touch with me?</h1>
         <p>If you would like to reach out to me, visit my Contact page. You can fill out a small form to send me a quick message.</p>
+        <a href="/contact"class="btn btn-purple">Contact</a>
       </div>
-      <div class="col-lg-3 text-center">
-        <img class="rounded-circle" src="http://www.clevermonkeylabs.org/wp-content/uploads/2016/05/work_00001.png" width="182px" alt="Generic placeholder image">
+      <div class="col-lg-3 text-center d-none d-md-none d-lg-block">
+        <img class="rounded-circle" src="{{asset "assets/img/icons/contact.png"}}" width="182px" alt="Generic placeholder image">
       </div>
     </div>
     <div class="row section-space"></div>
   </div>
 </main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="assets\js\popper.js"></script>
-<script src="assets\js\bootstrap.min.js"></script>
-<script src="http://www.clevermonkeylabs.org/wp-content/themes/cmlMainTheme_v6/scripts/typed.js"></script>
-<script src="http://www.clevermonkeylabs.org/wp-content/themes/cmlMainTheme_v6/scripts/realistic-typewriter.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
+<script src="{{asset "assets\js\jquery.min.js"}}"></script>
+<script src="{{asset "assets\js\popper.js"}}"></script>
+<script src="{{asset "assets\js\bootstrap.min.js"}}"></script>
+<script src="{{asset "assets\js\typed.js"}}"></script>
+<script src="{{asset "assets\js\realistic-typewriter.js"}}"></script>
+<script src="{{asset "assets\js\jquery-ui.min.js"}}"></script>
 
 <script>
   var realisticTypewriter = new RealisticTypewriter();
