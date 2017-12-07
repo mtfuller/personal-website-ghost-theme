@@ -1,0 +1,84 @@
+{{!< default}}
+
+<main role='main' class="container">
+  {{#post}}
+    <h1 class="display-1">{{title}}</h1>
+    <p class="lead">
+      {{excerpt}}
+    </p>
+
+    {{content}}
+  {{/post}}
+</main>
+
+<script>
+    var randomScalingFactor = function() {
+    return Math.round(Math.random() * 100);
+    };
+
+    var colors = [
+    "#D63024",
+    "#3484C5",
+    "#E8B622",
+    "#47B34B",
+    "#DB7E1A",
+    "#88239A",
+    "#808080"
+    ];
+
+    window.onload = function() {
+    var langConfig = {
+    type: 'horizontalBar',
+    data: {
+    labels: [
+    "Java",
+    "Python",
+    "C/C++",
+    "HTML/CSS",
+    "JavaScript",
+    "Node.js",
+    "MySQL",
+    "PHP",
+    ],
+    datasets: [
+    {
+      data: [75, 72, 68, 65, 62, 55, 50, 37],
+      backgroundColor: colors,
+      hoverBackgroundColor: colors
+    }
+    ]
+    },
+    options: {
+    scales: {
+    xAxes: [{
+      display: false,
+      ticks: {
+        min: 0,
+        max: 100,
+      }
+    }],
+    yAxes: [{
+      ticks: {
+        fontSize: 20,
+        fontColor: "#111",
+        fontFamily: "Segoe UI, sans-serif"
+      }
+    }]
+    },
+    legend: {
+    display: false
+    },
+    tooltips: {
+    enabled: false
+    }
+    }
+    };
+
+    var ctx1 = document.getElementById("lang-chart").getContext("2d");
+    window.myPie = new Chart(ctx1, langConfig);
+    };
+</script>
+
+<script src="{{asset "assets\js\jquery.slim.min.js"}}"></script>
+<script src="{{asset "assets\js\popper.js"}}"></script>
+<script src="{{asset "assets\js\bootstrap.min.js"}}"></script>

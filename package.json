@@ -1,0 +1,15 @@
+{
+    "name": "thomasfuller.codes",
+    "description": "My personal website Ghost blog theme",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=1.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "email": "mtfuller1995@gmail.com"
+    },
+    "config": {
+        "posts_per_page": 6
+    }
+}

@@ -1,0 +1,26 @@
+{{!< default}}
+
+<main role='main' class="container">
+  {{#post}}
+  <h1 class="display-1">{{title}}</h1>
+  <p class="lead">
+    {{excerpt}}
+  </p>
+
+  {{content}}
+
+  {{/post}}
+</main>
+
+<script type="text/javascript">
+  // Function used to calculate my age. I'm a bit lazy...
+  (function() {
+    var now = new Date();
+    var birthday = new Date(1995, 5, 7); // My Birthday!
+    document.getElementById('my-age').innerHTML = now.getFullYear() - birthday.getFullYear();
+  })();
+</script>
+
+<script src="{{asset "assets\js\jquery.slim.min.js"}}"></script>
+<script src="{{asset "assets\js\popper.js"}}"></script>
+<script src="{{asset "assets\js\bootstrap.min.js"}}"></script>

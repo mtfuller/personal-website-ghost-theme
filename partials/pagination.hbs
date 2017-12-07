@@ -1,0 +1,30 @@
+<ul class="pagination justify-content-center">
+  <li class="page-item {{#unless prev}}disabled{{/unless}}">
+    {{#if prev}}
+        <a class="page-link" href="{{page_url prev}}">Previous</a>
+    {{else}}
+        <span class="page-link">Previous</span>
+    {{/if}}
+  </li>
+  {{#if prev}}
+      <li class="page-item"><a class="page-link" href="{{page_url prev}}">{{prev}}</a></li>
+  {{/if}}
+  {{#if page}}
+  <li class="page-item active">
+    <span class="page-link">
+      {{page}}
+      <span class="sr-only">(current)</span>
+    </span>
+  </li>
+  {{/if}}
+  {{#if next}}
+      <li class="page-item"><a class="page-link" href="{{page_url next}}">{{next}}</a></li>
+  {{/if}}
+  <li class="page-item {{#unless next}}disabled{{/unless}}">
+    {{#if next}}
+        <a class="page-link" href="{{page_url next}}">Next</a>
+    {{else}}
+        <span class="page-link">Next</span>
+    {{/if}}
+  </li>
+</ul>
