@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.logo-root {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.logo-firstname {
+    color: $secondary-color;
+}
+
+.logo-lastname {
+    color: $tertiary-color;
+}

@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.hero-social-link-root {
+    text-decoration: none;
+}
+
+.hero-social-link-root .fa-stack {
+    background-color: $secondary-color;
+    border-radius: 100%;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+}
+
+.hero-social-link-root .fa-stack:hover {
+    background-color: $secondary-color-dark;
+}

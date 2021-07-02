@@ -1,0 +1,67 @@
+@import '../variables.scss';
+
+.navbar-root {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $primary-font-family;
+    align-items: flex-end;
+    height: 54px;
+}
+
+.navbar-root a {
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar-root .logo {
+    margin-right: auto;
+    height: 24px;
+}
+
+.navbar-root .page {
+    color: $link-color;
+}
+
+.navbar-root .mobile-navbar-button {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+.navbar-root .mobile-navbar-button:hover {
+    color: rgb(199, 199, 199);
+}
+
+.navbar-root .mobile-navbar-button span {
+    padding: 10px;
+    color: white;
+}
+
+
+.navbar-root .page:hover {
+    color: $link-color-hover;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .navbar-root .page {
+        display: none;
+    }
+
+    .navbar-root .mobile-navbar-button {
+        display: block;
+    }
+
+    .navbar-root .mobile-navbar-button span {
+        background-color: #00000000;
+    }
+
+    .navbar-mobile-button-clicked .page {
+        background-color: $dark-background;
+        flex-basis: 100%;
+        display: block;
+        z-index: 10;
+    }
+
+    .navbar-mobile-button-clicked .mobile-navbar-button span {
+        background-color: $dark-background;
+    }
+}

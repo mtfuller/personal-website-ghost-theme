@@ -1,0 +1,13 @@
+<a class="post-card-root" href="{{url}}">
+    <div class="card">
+        <img class="card-img-top" src="{{feature_image}}" alt="Card image cap">
+        <div class="card-img-overlay">
+            <h4>{{#if featured}}<span>Featured</span>{{/if}}</h4>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">{{title}}</h4>
+            <small class="text-muted">{{date format="MMMM DD, YYYY"}}</small>
+            <p class="card-text">{{excerpt words="30"}}...</p>
+        </div>
+    </div>
+</a>

@@ -1,0 +1,39 @@
+@import '../variables.scss';
+
+.pagination-root {
+    display: flex;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+    justify-content: center;
+    margin-top: 25px;
+
+    a, span {
+        background-color: white;
+        padding: 10px;
+        font-family: $primary-font-family;
+        font-size: 1em;
+    }
+
+    a {
+        color: $secondary-color;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+
+    span {
+        color: $post-card-date-color;
+    }
+
+    .page-number {
+        color: white;
+        background-color: $secondary-color;
+    }
+
+    .previous-button {
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .next-button {
+        border-radius: 0px 5px 5px 0px;
+    }
+}

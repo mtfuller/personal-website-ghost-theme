@@ -1,15 +1,42 @@
 {
-    "name": "thomasfuller.codes",
-    "description": "My personal website Ghost blog theme",
-    "version": "3.0.1",
+    "name": "thomasfuller-codes",
+    "version": "1.0.0",
     "engines": {
-        "ghost": ">=1.0.0"
+        "ghost": ">=4.0.0",
+        "ghost-api": "v4"
     },
-    "license": "MIT",
     "author": {
+        "name": "Thomas Fuller",
         "email": "mtfuller1995@gmail.com"
     },
+    "scripts": {
+        "build": "webpack",
+        "build:watch": "webpack --watch",
+        "scan": "gscan .",
+        "package": "bestzip thomasfuller.zip assets/* partials/* *.hbs *.json *.jpg",
+        "package:scan": "gscan -z ./thomasfuller.zip"
+    },
+    "devDependencies": {
+        "bestzip": "^2.2.0",
+        "copy-webpack-plugin": "^9.0.0",
+        "css-loader": "^5.2.6",
+        "file-loader": "^6.2.0",
+        "gscan": "^4.1.0",
+        "mini-css-extract-plugin": "^1.6.0",
+        "sass": "^1.35.1",
+        "sass-loader": "^12.1.0",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.40.0",
+        "webpack-cli": "^4.7.2"
+    },
+    "dependencies": {
+        "highlight.js": "^11.0.1",
+        "prismjs": "^1.24.0"
+    },
+    "keywords": [
+        "ghost-theme"
+    ],
     "config": {
-        "posts_per_page": 6
+        "posts_per_page": 5
     }
 }

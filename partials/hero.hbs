@@ -1,0 +1,19 @@
+<div class="hero-root">
+    <div class="hero-layer hero-splash" style="background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.425)), url({{asset "images/hero-background-blur.jpg"}})"></div>
+    <div class="hero-layer hero-foreground">
+        <div>
+            <div class="profile-pic" style="background-image: url({{asset "images/profile-pic.jpg"}})"></div>
+        </div>
+        <div class="hero-text">
+            <h1>Thomas Fuller</h1>
+            <span>Full-stack developer living in Atlanta, Georgia. Passionate about bringing great ideas to life.</span>
+            <div class="social-links">
+                {{> heroSocialLink heroLink="https://twitter.com/_thomasfuller_" heroIconClass="fa-twitter"}}
+                {{> heroSocialLink heroLink="https://www.linkedin.com/in/thomas-fuller-407788b8" heroIconClass="fa-linkedin"}}
+                {{> heroSocialLink heroLink="https://www.youtube.com/channel/UCjd9v10ipgOm5a9xgkCsCNQ" heroIconClass="fa-youtube-play"}}
+                {{> heroSocialLink heroLink="https://github.com/mtfuller" heroIconClass="fa-github-alt"}}
+            </div>
+        </div>
+    </div>
+    <div class="hero-layer">{{navigation}}</div>
+</div>

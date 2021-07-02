@@ -1,0 +1,222 @@
+@import '../variables.scss';
+
+.page-root {
+    padding: 70px 200px;
+    background-color: #F0F0F0;
+    min-height: calc(100vh - 304px);
+}
+@media (max-width: $breakpoint-tablet) {
+    .page-root {
+        padding: 50px 20px;
+    }
+}
+
+
+.page-root h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,li {
+    font-family: $primary-font-family;
+}
+
+.page-root p,li {
+    font-size: 1.2em;
+}
+
+.page-root a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+.page-root a:hover {
+    color: $secondary-color-dark;
+    text-decoration: underline;
+}
+
+.page-root blockquote {
+    background-color: $primary-color;
+    border-left: 10px solid $secondary-color;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-style: italic;
+    color: white;
+    font-size: 1.3em;
+}
+
+.page-root h1 {
+    color: $primary-color;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.page-root h2 {
+    color: $secondary-color;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.page-root h3 {
+    color: $dark-background;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.page-root h4 {
+}
+
+.page-root .title {
+    font-size: 3.5em;
+    color: $secondary-color;
+    margin-bottom: 0px;
+    text-indent: -4px;
+}
+
+.page-root .subtitle {
+    margin: 5px 0px 35px 0px;
+    font-size: 1.5em;
+}
+
+.page-root hr {
+    border-width: 0px;
+    margin: 50px 0px;
+}
+
+.page-root code {
+    padding: 5px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 5px;
+}
+
+.page-root hr {
+    border-width: 0px;
+    margin: 50px 0px;
+}
+
+.page-root table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0px;
+}
+
+.page-root th {
+    font-family: $primary-font-family;
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 10px;
+}
+
+.page-root td {
+    font-family: $primary-font-family;
+    background-color: #FFF;
+    padding: 10px;
+    border: none;
+}
+
+.page-root form {
+    font-family: $primary-font-family;
+    font-size: 1em;
+}
+
+.page-root input[type=text] {
+    width: 100%;
+    font-family: $primary-font-family;
+    font-size: 1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.page-root input[type=email] {
+    width: 100%;
+    font-family: $primary-font-family;
+    font-size: 1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.page-root input[type=submit] {
+    width: 100%;
+    font-family: $primary-font-family;
+    font-size: 1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: $secondary-color;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    transition: 0.3s;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+}
+.page-root input[type=submit]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.55));
+    background-color: $secondary-color-dark;
+}
+
+.page-root textarea {
+    width: 100%;
+    font-family: $primary-font-family;
+    font-size: 1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.page-root select {
+    width: 100%;
+    font-family: $primary-font-family;
+    font-size: 1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.page-root tr:nth-child(even) td{
+    background-color: rgb(245, 245, 245);
+}
+
+.page-navbar-wrapper {
+    background-color: $primary-color;
+}
+
+.page-root .kg-card {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.page-root .kg-image-card img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.page-root .page-posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-evenly;
+}
+
+.page-root .blog-posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.page-root .blog-posts-list .post-card-root {
+    max-width: 100%;
+}
+
+.page-root .comments-section {
+    margin-top: 50px;
+}

@@ -1,70 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Thomas Fuller</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{asset "assets\css\bootstrap.min.css"}}">
-    <link rel="stylesheet" href="{{asset "assets\css\thomasfuller-theme.css"}}">
-
-    {{ghost_head}}
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-dark navbar-expand-lg bg-dark justify-content-between">
-        <a class="navbar-brand" href="/">Thomas Fuller</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-           <ul class="navbar-nav ml-auto">
-             {{navigation}}
-           </ul>
-         </div>
-      </nav>
-    </header>
-
-    {{{body}}}
-
-    <footer class="footer bg-dark">
-      <div class="container text-center site-footer d-none d-sm-none d-md-block">
-        <span class="hidden-xs">All Rights Reserved. Powered by Ghost.</span>
-        <div class="social-media-footer-links">
-            <a href="https://twitter.com/_thomasfuller_">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-twitter fa-stack-1x"></i>
-                </span>
-            </a>
-            <a href="https://www.linkedin.com/in/thomas-fuller-407788b8">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-linkedin fa-stack-1x"></i>
-                </span>
-            </a>
-            <a href="https://www.youtube.com/channel/UCjd9v10ipgOm5a9xgkCsCNQ">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-youtube-play fa-stack-1x"></i>
-                </span>
-            </a>
-            <a href="https://github.com/mtfuller">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-github-alt fa-stack-1x"></i>
-                </span>
-            </a>
-        </div>
-      </div>
-      <div class="container d-block d-md-none">
-        <div class="row social-left">
-          <a href="https://twitter.com/_thomasfuller_"><div><i class="fa fa-twitter fa-lg"></i></div></a>
-          <a href="https://www.linkedin.com/in/thomas-fuller-407788b8"><div><i class="fa fa-linkedin fa-lg"></i></div></a>
-          <a href="https://www.youtube.com/channel/UCjd9v10ipgOm5a9xgkCsCNQ"><div><i class="fa fa-youtube-play fa-lg"></i></div></a>
-          <a href="https://github.com/mtfuller"><div><i class="fa fa-github-alt fa-lg"></i></div></a>
-        </div>
-      </div>
-    </footer>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        {{ghost_head}}
+        <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        {{{body}}}
+        <script src="{{asset "js/main.js"}}"></script>
+    </body>
     {{ghost_foot}}
-  </body>
 </html>

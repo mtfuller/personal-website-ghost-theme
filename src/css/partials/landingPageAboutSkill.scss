@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.landing-page-about-skill-root {
+    width: 200px;
+}
+
+.landing-page-about-skill-root h3 {
+    color: $secondary-color;
+    font-family: $primary-font-family;
+    margin: 0px;
+    padding-right: 15px;
+}
+
+.landing-page-about-skill-root span {
+    color: white;
+    font-family: $primary-font-family;
+    font-size: 18px;
+}
+
+.landing-page-about-skill-root .body-section {
+    padding: 5px 0px;
+}
+
+.landing-page-about-skill-root .fa {
+    background-color: $secondary-color;
+    border-radius: 100%;
+    margin-right: 10px;
+}

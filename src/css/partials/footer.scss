@@ -1,0 +1,62 @@
+@import '../variables.scss';
+
+.footer-root {
+    background-color: $dark-background;
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .footer-root {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer-root .signoff {
+    display: flex;
+    align-items: center;
+}
+
+.footer-root .signoff span {
+    color: white;
+    font-family: $primary-font-family;
+    font-size: small;
+    margin-left: 25px;
+}
+@media (max-width: $breakpoint-tablet) {
+    .footer-root .signoff span {
+        margin: 0px;
+    }
+}
+
+.footer-root .social-links {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+@media (max-width: $breakpoint-tablet) {
+    .footer-root .social-links {
+        margin: 0px;
+    }
+}
+
+
+.footer-root .social-links a:hover div {
+    color: rgb(214, 214, 214);
+}
+
+.footer-root .social-links a div {
+    color: white;
+    padding: 10px;
+}
+@media (max-width: $breakpoint-tablet) {
+    .footer-root .social-links a div {
+        font-size: 22px;
+        padding: 20px;
+    }
+}
+
+

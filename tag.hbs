@@ -1,45 +1,25 @@
 {{!< default}}
 
-<main role='main' class="container">
-  {{#tag}}
-    <h1 class="display-1">{{name}}</h1>
-    <p class="lead">
-      Here is a collection of projects and blog posts related to &quot;{{name}}&quot;
-    </p>
-  {{/tag}}
+<div class="page-navbar-wrapper">
+    {{navigation}}
+</div>
 
-  <div class="section-lg">
-    <div class="row">
-      {{#foreach posts}}
-        <div class="col-lg-4">
-          <a class="card-link" href="{{url absolute="true"}}">
-            <div class="card">
-              <img class="card-img-top" src="{{img_url feature_image}}" alt="Card image cap">
-              <div class="card-img-overlay">
-                {{#has tag="blog"}}
-                  <h4><span class="badge badge-success">Blog</span></h4>
-                {{/has}}
-                {{#has tag="projects"}}
-                  <h4><span class="badge badge-yellow">Project</span></h4>
-                {{/has}}
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">{{title}}</h5>
-                <p class="card-text"><small class="text-muted">{{date format="MMMM DD, YYYY"}}</small></p>
-                <p class="card-text">{{excerpt words="15"}}...</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      {{/foreach}}
+<div class="page-root">
+    {{#tag}}
+        <h1 class="title">{{name}}</h1>
+        {{#if description}}
+            <p class="subtitle">{{description}}</p>
+        {{/if}}
+    {{/tag}}
+
+    <div class="page-posts-list">
+        {{#foreach posts}}
+            {{> postCard}}
+        {{/foreach}}
     </div>
 
-    <div class="text-center pagination-grey">
-      {{pagination}}
-    </div>
-  </div>
-</main>
+    {{pagination}}
 
-<script src="{{asset "assets\js\jquery.slim.min.js"}}"></script>
-<script src="{{asset "assets\js\popper.js"}}"></script>
-<script src="{{asset "assets\js\bootstrap.min.js"}}"></script>
+</div>
+
+{{> footer}}

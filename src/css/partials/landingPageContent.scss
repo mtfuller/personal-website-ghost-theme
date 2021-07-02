@@ -1,0 +1,125 @@
+@import '../variables.scss';
+
+.landing-page-content-root {
+    background-color: $primary-color;
+    padding: 50px 0;
+}
+
+.landing-page-content-root h1 {
+    color: $secondary-color;
+}
+
+.landing-page-content-root p, span {
+    color: white;
+    font-family: $primary-font-family;
+}
+
+.landing-page-content-root .section {
+    display: flex;
+    padding: 100px 100px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .landing-page-content-root .section {
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+
+    .landing-page-content-root .mobile-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+.landing-page-content-root .section-column {
+    flex-direction: column;
+}
+
+.landing-page-content-root .section .about-column {
+    flex-basis: 50%;
+}
+
+.landing-page-content-root .section h1 {
+    margin-top:0px;
+}
+
+.landing-page-content-root .section h2 {
+    color: white;
+    font-family: $primary-font-family;
+    font-weight: 200;
+    font-size: 26px;
+}
+
+.landing-page-content-root .section p {
+    color: white;
+    font-family: $primary-font-family;
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.landing-page-content-root .about-skills-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.landing-page-content-root .about-skills-column .landing-page-about-skill-root {
+    flex-basis: 40%;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .landing-page-content-root .about-skills-column .landing-page-about-skill-root {
+        flex-basis: 100%;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .landing-page-content-root .about-skills-column {
+        margin: 25px;
+    }
+}
+
+.landing-page-content-root .services-section-header {
+    text-align: center;
+}
+
+.landing-page-content-root .services-section-row {
+    margin-top: 15px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .landing-page-content-root .services-section-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.landing-page-content-root .column-reversed {
+    text-align: right;
+}
+.landing-page-content-root .icon-image-side {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    color: white;
+}
+
+.page-link {
+    color: white;
+    font-family: $primary-font-family;
+    background-color: $secondary-color;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.page-link:hover {
+    background-color: $secondary-color-dark;
+}

@@ -1,5 +1,11 @@
-{{#foreach navigation}}
- <li class="nav-item nav-link">
-   <a class="nav-link" href="{{url absolute="true"}}">{{label}}</a>
- </li>
-{{/foreach}}
+<div id="navbar-root-id" class="navbar-root">
+    <a class="logo" href="/">{{> logo}}</a>
+    <div id="navbar-mobile-button" class="mobile-navbar-button">
+        <span class="fa-stack">
+            <i class="fa fa-bars fa-stack-2x"></i>
+        </span>
+    </div>
+    {{#foreach navigation}}
+        <a class="page" href="{{url absolute="true"}}">{{label}}</a>
+    {{/foreach}}
+</div>

@@ -1,73 +1,25 @@
 {{!< default}}
 
-<main role='main' class="container">
-  <h1 class="display-1">Blog</h1>
-  <p class="lead">
-    A place where I write down my thoughts about the things I'm learning.
-  </p>
-  <div class="section">
-    <div class="row">
-      <div class="col-lg-8">
+<div class="page-navbar-wrapper">
+    {{navigation}}
+</div>
+
+<div class="page-root">
+    {{#tag}}
+        <h1 class="title">{{name}}</h1>
+        {{#if description}}
+            <p class="subtitle">{{description}}</p>
+        {{/if}}
+    {{/tag}}
+
+    <div class="blog-posts-list">
         {{#foreach posts}}
-          <a class="card-link" href="{{url absolute="true"}}">
-            <div class="card">
-              <img class="card-img-top" src="{{img_url feature_image}}" alt="Card image cap">
-              <div class="card-img-overlay">
-                <h4>{{#if featured}}<span class="badge badge-success"> Featured</span>{{/if}}</h4>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">{{title}}</h4>
-                <p class="card-text"><small class="text-muted">{{date format="MMMM DD, YYYY"}}</small></p>
-                <p class="card-text">{{excerpt words="40"}}...</p>
-              </div>
-            </div>
-          </a>
+            {{> postCard}}
         {{/foreach}}
-      </div>
-      <div class="col-lg-4 d-none d-sm-none d-md-block">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Recent Posts</h4>
-            <div>
-              {{#get "posts" filter="tags:blog" limit="3"}}
-                {{#foreach posts}}
-                    <p><a class="blog-link" href="{{url absolute="true"}}">{{title}}</a></p>
-                {{/foreach}}
-              {{/get}}
-            </div>
-            <h4 class="card-title">Featured Posts</h4>
-            <div>
-              {{#get "posts" filter="tag:blog" limit="3"}}
-                {{#foreach posts}}
-                  {{#if featured}}
-                    <p><a class="blog-link" href="{{url absolute="true"}}">{{title}}</a></p>
-                  {{/if}}
-                {{/foreach}}
-              {{/get}}
-            </div>
-            <h4 class="card-title">Tags</h4>
-            <div>
-              {{#get "tags" limit="all"}}
-                {{#foreach tags}}
-                  {{^has slug="blog"}}
-                    {{^has slug="projects"}}
-                      <a class="btn btn-success btn-sm" href="{{url absolute="true"}}" role="button">{{name}}</a>
-                    {{/has}}
-                  {{/has}}
-                {{/foreach}}
-              {{/get}}
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="text-center pagination-green">
-      {{pagination}}
-    </div>
-  </div>
-</main>
+    {{pagination}}
 
-<script src="{{asset "assets\js\jquery.slim.min.js"}}"></script>
-<script src="{{asset "assets\js\popper.js"}}"></script>
-<script src="{{asset "assets\js\bootstrap.min.js"}}"></script>
+</div>
+
+{{> footer}}

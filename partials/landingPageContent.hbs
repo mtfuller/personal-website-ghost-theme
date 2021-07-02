@@ -1,0 +1,76 @@
+<div class="landing-page-content-root">
+    <div class="section">
+        <div class="about-column">
+            <h1>About</h1>
+            <h2>Hello, I'm Thomas!</h2>
+            <p>
+                I am a full-stack developer living in Atlanta, GA. Currently passionate about cloud development, machine learning, and cybersecurity.
+            </p>
+            <p>
+                On a more personal level, I am a follower of Christ. I enjoy spending time with friends and family, walking around in nature, and learning how to play mandolin.
+            </p>
+            <a class="page-link" href="/about">Learn More</a>
+        </div>
+        <div class="about-skills-column">
+            {{> landingPageAboutSkill title="Languages" iconClass="fa-code fa-stack-1x" body="JavaScript, TypeScript, Python, Java, Kotlin"}}
+            {{> landingPageAboutSkill title="Frontend" iconClass="fa-desktop fa-stack-1x" body="HTML/CSS/JS, React.js, Ember.js, Android (Java), iOS (Objective-C)"}}
+            {{> landingPageAboutSkill title="Backend" iconClass="fa-database fa-stack-1x" body="Node.js (Express.js, Nest.js), MySQL, MongoDB"}}
+            {{> landingPageAboutSkill title="Cloud" iconClass="fa-cloud fa-stack-1x" body="Serverless Framework, AWS (EC2, Lambda, SQS, SES, KMS), DigitalOcean"}}
+        </div>
+    </div>
+    <div class="section section-column">
+        <div class="services-section-header">
+            <h1>Services</h1>
+            <h2>Need to bring an idea to life?</h2>
+        </div>
+        <div class="services-section-row">
+            {{> landingPageServicesCard title="Consultation" iconClass="fa-comments-o" description="Let's discuss your business needs and constraints to determine how to bring your idea to life."}}
+            {{> landingPageServicesCard title="Prototyping" iconClass="fa-lightbulb-o" description="Take the next steps forward with your idea. I can create mockups, wireframes, and rough versions of your product."}}
+            {{> landingPageServicesCard title="Development" iconClass="fa-code" description="Need a frontend app or backend API service? I can deliver robust, test-driven solutions for your short-term projects."}}
+        </div>
+        <div class="services-section-header">
+            <p>Visit my Services page to get more details on what I can provide.</p>
+            <a class="page-link" href="/services">Learn More</a>
+        </div>
+    </div>
+    <div class="section mobile-reverse">
+        <div class="about-column">
+            <h1>Projects</h1>
+            <h2>Care to check out some of my passion projects?</h2>
+            <p>
+                In my free time, I tend to tinker around with software, coding, electronics, RPi's, Arduino's, and other things. Would love for you to checkout some of the projects I'm working on.
+            </p>
+            <a class="page-link" href="/tag/project">Learn More</a>
+        </div>
+        <div class="about-column">
+            <div class="icon-image-side">
+                <i class="fa fa-flask"></i>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="about-column">
+            <div class="icon-image-side">
+                <i class="fa fa-pencil"></i>
+            </div>
+        </div>
+        <div class="about-column column-reversed">
+            <h1>Blog</h1>
+            <h2>Interested in what I'm thinking about?</h2>
+            <p>
+                I try to write down thoughts that pop up in my head. Helps me to look back and reflect on where I'm at and look forward to where I'm going.
+            </p>
+            <a class="page-link" href="/tag/blog">Learn More</a>
+        </div>
+    </div>
+    <div class="section section-column">
+        <div class="services-section-header">
+            <h1>Contact</h1>
+            <h2>Would you like to get in touch with me?</h2>
+            <p>
+                If you would like to reach out to me, visit my Contact page. You can fill out a small form to send me a quick message.
+            </p>
+            <a class="page-link" href="/contact">Contact Me</a>
+        </div>
+    </div>
+</div>
